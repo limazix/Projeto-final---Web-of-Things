@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="performance_text">0.00 seconds 0.00 xRT</string>
+    <string name="app_name">RoomControlAndroid</string>
+    <string name="request">Request</string>
+    <string name="on_off_label">On/Off</string>
+    <string name="ch_plus_label">Ch+</string>
+    <string name="ch_less_label">Ch-</string>
+    <string name="vol_plus_label">Vol+</string>
+    <string name="vol_less_label">Vol-</string>
+</resources>

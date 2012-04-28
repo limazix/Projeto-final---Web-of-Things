@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="2px"
+    android:gravity="center_horizontal"
+    style="@style/WindowStyle">
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="2px"
+			    android:gravity="center_horizontal"> 
+                
+				<EditText android:id="@+id/url_input"
+						  android:layout_width="200px"
+						  android:layout_height="fill_parent"/>
+			  	<Button android:id="@+id/url_button"
+			  			android:text="Set URL"
+			  			android:padding="2px"
+			  			android:layout_height="fill_parent"
+			  			android:layout_width="100px"/>
+	</LinearLayout>
+
+    <Button android:id="@+id/on_off_button" 
+            android:layout_width="100px" 
+            android:layout_height="wrap_content"
+            android:text="On/Off"/>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="2px"
+		    android:gravity="center_horizontal"
+	    >
+		    <Button android:id="@+id/ch_up_button"
+		    		android:layout_width="100px" 
+		            android:layout_height="wrap_content"
+		            android:text="Ch+" />
+		
+			<Button android:id="@+id/ch_down_button"
+					android:layout_width="100px" 
+		            android:layout_height="wrap_content"
+		            android:text="Ch-" />
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="2px"
+		    android:gravity="center_horizontal"
+	    >   
+			<Button android:id="@+id/vol_up_button"
+					android:layout_width="100px" 
+		            android:layout_height="wrap_content"
+		            android:text="Vol+" />
+		            
+			<Button android:id="@+id/vol_down_button"
+					 android:layout_width="100px"
+		            android:layout_height="wrap_content"
+		            android:text="Vol-" />
+	</LinearLayout>				
+	<EditText android:id="@+id/EditText01" 
+	    android:layout_width="fill_parent"
+		android:text="Text goes here..." 
+		android:contentDescription="Recognition results"
+		android:layout_height="wrap_content"/>
+	
+	<TextView android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/PerformanceText" 
+	    android:text="@string/performance_text" 
+	    android:gravity="center"
+	    android:paddingBottom="3px"/>
+</LinearLayout>
