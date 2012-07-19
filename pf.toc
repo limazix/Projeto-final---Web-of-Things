@@ -1,0 +1,28 @@
+\select@language {brazil}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{9}{chapter.1}
+\contentsline {section}{\numberline {1.1}Objetivos}{10}{section.1.1}
+\contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{11}{section.1.2}
+\contentsline {chapter}{\numberline {2}Fundamentos}{12}{chapter.2}
+\contentsline {section}{\numberline {2.1}\emph {Web of Things} - WoT}{13}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}N\IeC {\'o}s como Recursos RESTful}{13}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Android}{17}{section.2.2}
+\contentsline {section}{\numberline {2.3}Sistema para Reconhecimento da Fala}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Extra\IeC {\c c}\IeC {\~a}o de Par\IeC {\^a}metros do Sinal}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Modelagem Ac\IeC {\'u}stica}{21}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Modelo de Linguagem}{24}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Decodifica\IeC {\c c}\IeC {\~a}o}{24}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Arduino}{26}{section.2.4}
+\contentsline {chapter}{\numberline {3}Funcionamento do Sistema}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Rede de Atuadores e Sensores Sem Fio (RASSF)}{30}{section.3.1}
+\contentsline {section}{\numberline {3.2}Smart Gateway (SG)}{33}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Camada de Apresenta\IeC {\c c}\IeC {\~a}o}{35}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Camada de Controle}{36}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Camada de Abstra\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~a}o}{37}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Cliente REST para Android}{39}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Sistema de Reconhecimento de Fala para Android}{41}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}Trabalhos Correlatos}{44}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o e Trabalhos Futuros}{46}{chapter.5}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{48}{section.5.1}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{51}{section.5.1}
+\contentsline {chapter}{\numberline {A}Configura\IeC {\c c}\IeC {\~a}o Galax 5}{54}{appendix.A}

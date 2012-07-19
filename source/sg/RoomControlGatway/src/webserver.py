@@ -4,13 +4,14 @@
 __author__="bruno"
 __date__ ="$24/07/2011 15:59:26$"
 
-from wifimodule import get_response
-from wifimodule import wifi_server
-from wifimodule import *
+#from wifimodule import get_response
+#from wifimodule import wifi_server
+#from wifimodule import *
 import cgi
 from threading import Thread
 from os import curdir, sep
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+from bluetoothmodule import BluetoothMenager
 
 devices = []
 
@@ -18,6 +19,14 @@ class MyHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         try:
+            if self.path.endswith(".apk"):
+                f = open(curdir + sep + self.path,'rb')
+                self.send_response(200)
+                self.send_header('Content-type','application/zip')
+                self.end_headers()
+                self.wfile.write(f.read())
+                f.close()
+                return
             if self.path.endswith(".html"):
                 f = open(curdir + sep + self.path)
                 self.send_response(200)
@@ -27,44 +36,54 @@ class MyHandler(BaseHTTPRequestHandler):
                 f.close()
                 return
             if self.path == '/OnOff':   #our dynamic content
-                if devices[0] != null:
+                self.send_response(200)
+                self.send_header('Content-type','text/html')
+                self.end_headers()
+                if devices:
                     devices[0].send_msg('onoff')
-                    self.send_response(200)
-                    self.send_header('Content-type','text/html')
-                    self.end_headers()
                     self.wfile.write(devices[0].get_response())
+                else:
+                    self.wfile.write("Recurso indsponivel.")
                 return
             if self.path == '/ChUp':   #our dynamic content
-                if devices[0] != null:
+                self.send_response(200)
+                self.send_header('Content-type','text/html')
+                self.end_headers()
+                if devices:
                     devices[0].send_msg('chup')
-                    self.send_response(200)
-                    self.send_header('Content-type','text/html')
-                    self.end_headers()
                     self.wfile.write(devices[0].get_response())
+                else:
+                    self.wfile.write("Recurso indsponivel.")
                 return
             if self.path == '/ChDown':   #our dynamic content
-                if devices[0] != null:
+                self.send_response(200)
+                self.send_header('Content-type','text/html')
+                self.end_headers()
+                if devices:
                     devices[0].send_msg('chdown')
-                    self.send_response(200)
-                    self.send_header('Content-type','text/html')
-                    self.end_headers()
                     self.wfile.write(devices[0].get_response())
+                else:
+                    self.wfile.write("Recurso indsponivel.")
                 return
             if self.path == '/VolUp':   #our dynamic content
-                if devices[0] != null:
+                self.send_response(200)
+                self.send_header('Content-type','text/html')
+                self.end_headers()
+                if devices:
                     devices[0].send_msg('volup')
-                    self.send_response(200)
-                    self.send_header('Content-type','text/html')
-                    self.end_headers()
                     self.wfile.write(devices[0].get_response())
+                else:
+                    self.wfile.write("Recurso indsponivel.")
                 return
             if self.path == '/VolDown':   #our dynamic content
-                if devices[0] != null:
+                self.send_response(200)
+                self.send_header('Content-type','text/html')
+                self.end_headers()
+                if devices:
                     devices[0].send_msg('voldown')
-                    self.send_response(200)
-                    self.send_header('Content-type','text/html')
-                    self.end_headers()
                     self.wfile.write(devices[0].get_response())
+                else:
+                    self.wfile.write("Recurso indsponivel.")
                 return
 
             return
@@ -110,10 +129,10 @@ def main():
 
     my_server = MyServer()
     my_server.start()
-    wifiServer = wifi_server()
-    wifiServer.start()
-    devices = wifiServer.get_device_list()
-#    bluetoothMenager = BluetoothMenager()
+#    wifiServer = wifi_server()
+#    wifiServer.start()
+#    devices = wifiServer.get_device_list()
+ #   bluetoothMenager = BluetoothMenager()
 #    devices = bluetoothMenager.get_devices()
 
 if __name__ == '__main__':
