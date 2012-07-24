@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.9.24)  16 JUL 2012 11:29
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.9.24)  23 JUL 2012 23:12
 entering extended mode
  %&-line parsing enabled.
 **pf.tex
@@ -545,36 +545,36 @@ Cap\'{\i }tulo 1.
 ] [10] [11]
 Cap\'{\i }tulo 2.
 
-Overfull \hbox (0.72258pt too wide) in paragraph at lines 115--116
+Overfull \hbox (0.72258pt too wide) in paragraph at lines 109--110
 []\T1/cmr/m/n/12 Neste capí-tulo serão ap-re-sen-ta-dos os prin-ci-pais fun-da-
 men-tos que en-volvem
  []
 
 [12
 
-] [13] [14] <figuras/figura_2_4.png, id=284, 487.06969pt x 263.48438pt>
+] [13] [14] <figuras/figura_2_4.png, id=267, 487.06969pt x 263.48438pt>
 File: figuras/figura_2_4.png Graphic file (type png)
 
 <use figuras/figura_2_4.png>
-<figuras/figura_2_5_a.png, id=285, 374.90062pt x 294.34969pt>
+<figuras/figura_2_5_a.png, id=268, 374.90062pt x 294.34969pt>
 File: figuras/figura_2_5_a.png Graphic file (type png)
 
 <use figuras/figura_2_5_a.png>
-<figuras/figura_2_5_b.png, id=286, 329.73187pt x 359.84438pt>
+<figuras/figura_2_5_b.png, id=269, 329.73187pt x 359.84438pt>
 File: figuras/figura_2_5_b.png Graphic file (type png)
 
 <use figuras/figura_2_5_b.png>
-Overfull \hbox (15.66284pt too wide) in paragraph at lines 162--165
+Overfull \hbox (15.66284pt too wide) in paragraph at lines 156--159
  [][][][] 
  []
 
 [15 <./figuras/figura_2_4.png (PNG copy)> <./figuras/figura_2_5_a.png (PNG copy
 )> <./figuras/figura_2_5_b.png (PNG copy)>] [16] [17] [18]
-<figuras/figura_2_1.png, id=312, 1074.0125pt x 670.505pt>
+<figuras/figura_2_1.png, id=295, 1074.0125pt x 670.505pt>
 File: figuras/figura_2_1.png Graphic file (type png)
 
 <use figuras/figura_2_1.png>
-Overfull \hbox (21.1576pt too wide) in paragraph at lines 219--219
+Overfull \hbox (21.1576pt too wide) in paragraph at lines 215--215
  [][] 
  []
 
@@ -582,23 +582,23 @@ Overfull \hbox (21.1576pt too wide) in paragraph at lines 219--219
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <./figuras/figura_2_1.png>]
-<figuras/figura_2_2.png, id=326, 237.13594pt x 248.42813pt>
+<figuras/figura_2_2.png, id=309, 237.13594pt x 248.42813pt>
 File: figuras/figura_2_2.png Graphic file (type png)
 
 <use figuras/figura_2_2.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21] <figuras/figura_2_3.png, id=335, 446.66875pt x 269.005pt>
+[21] <figuras/figura_2_3.png, id=318, 446.66875pt x 269.005pt>
 File: figuras/figura_2_3.png Graphic file (type png)
 
 <use figuras/figura_2_3.png>
-Overfull \hbox (14.63141pt too wide) in paragraph at lines 270--270
+Overfull \hbox (14.63141pt too wide) in paragraph at lines 261--261
  [][] 
  []
 
 [22 <./figuras/figura_2_2.png (PNG copy)>] [23 <./figuras/figura_2_3.png>]
-[24] [25] <figuras/arduino_uno.jpg, id=366, 411.5375pt x 411.5375pt>
+[24] [25] <figuras/arduino_uno.jpg, id=349, 411.5375pt x 411.5375pt>
 File: figuras/arduino_uno.jpg Graphic file (type jpg)
 
 <use figuras/arduino_uno.jpg>
@@ -610,67 +610,73 @@ Cap\'{\i }tulo 3.
 [29
 
 ]
-Overfull \hbox (37.82573pt too wide) in paragraph at lines 347--347
+Overfull \hbox (37.82573pt too wide) in paragraph at lines 334--334
 []\T1/cmr/bx/n/17.28 Rede de At-u-adores e Sen-sores Sem Fio (RASSF) 
  []
 
-<figuras/figura_2_6.png, id=402, 435.12563pt x 409.53pt>
+<figuras/figura_2_6.png, id=385, 435.12563pt x 409.53pt>
 File: figuras/figura_2_6.png Graphic file (type png)
 
 <use figuras/figura_2_6.png>
-<figuras/figura_2_7.png, id=404, 415.5525pt x 275.52937pt>
+<figuras/figura_2_7.png, id=387, 415.5525pt x 275.52937pt>
 File: figuras/figura_2_7.png Graphic file (type png)
 
 <use figuras/figura_2_7.png>
-Overfull \hbox (9.27191pt too wide) in paragraph at lines 371--372
+Overfull \hbox (9.27191pt too wide) in paragraph at lines 358--359
 \T1/cmr/m/n/12 sub-sis-temas de co-mu-ni-cação (trans-mis-sor e re-cep-tor), re
 -cur-sos de ar-mazenagem
  []
 
 [30] [31 <./figuras/figura_2_6.png (PNG copy)> <./figuras/figura_2_7.png (PNG c
 opy)>] [32]
-Overfull \hbox (10.64253pt too wide) in paragraph at lines 383--384
+Overfull \hbox (10.64253pt too wide) in paragraph at lines 370--371
 \T1/cmr/m/n/12 forma, so-mente a car-ac-terís-tica de re-quer-i-mento em tempo 
 real se fez necessária,
  []
 
-[33] <figuras/figura_2_8.png, id=427, 540.51938pt x 262.73157pt>
+[33] <figuras/figura_2_8.png, id=410, 540.51938pt x 262.73157pt>
 File: figuras/figura_2_8.png Graphic file (type png)
 
 <use figuras/figura_2_8.png>
-Overfull \hbox (5.64793pt too wide) in paragraph at lines 403--404
+Overfull \hbox (5.64793pt too wide) in paragraph at lines 390--391
 \T1/cmr/m/n/12 abor-dagem difer-ente foi tomada, pois a lin-guagem Python ofer-
 ece uma unidade
  []
 
 [34 <./figuras/figura_2_8.png (PNG copy)>] [35] [36] [37] [38]
-<figuras/rest_android.png, id=456, 1027.6794pt x 770.3982pt>
+<figuras/rest_android.png, id=439, 1027.6794pt x 770.3982pt>
 File: figuras/rest_android.png Graphic file (type png)
 
 <use figuras/rest_android.png> [39 <./figuras/rest_android.png (PNG copy)>]
-Overfull \hbox (20.733pt too wide) in paragraph at lines 481--482
+Overfull \hbox (20.733pt too wide) in paragraph at lines 468--469
 []\T1/cmr/m/n/12 Neste tra-balho o com-po-nente \T1/cmr/m/it/12 Con-tent Provid
 er \T1/cmr/m/n/12 suprac-i-tado não foi necessário,
  []
 
 
-Overfull \hbox (18.44327pt too wide) in paragraph at lines 487--488
+Overfull \hbox (1.17934pt too wide) in paragraph at lines 470--471
+[]\T1/cmr/m/n/12 Apesar da apli-cação fun-cionar de maneira sat-is-fatória, per
+-mitindo o acesso
+ []
+
+
+Overfull \hbox (18.44327pt too wide) in paragraph at lines 474--475
 []\T1/cmr/m/n/12 Esta tec-nolo-gia está disponível desde 2009 com a ver-são 1.5
  de sua plataforma.
  []
 
-[40] <figuras/GV_sms1.png, id=471, 481.8pt x 803.0pt>
+[40] <figuras/GV_sms1.png, id=454, 481.8pt x 803.0pt>
 File: figuras/GV_sms1.png Graphic file (type png)
 
-<use figuras/GV_sms1.png> <figuras/GV_sms2.png, id=472, 481.8pt x 803.0pt>
+<use figuras/GV_sms1.png> <figuras/GV_sms2.png, id=455, 481.8pt x 803.0pt>
 File: figuras/GV_sms2.png Graphic file (type png)
 
-<use figuras/GV_sms2.png> <figuras/GV_sms3.png, id=473, 481.8pt x 803.0pt>
+<use figuras/GV_sms2.png> <figuras/GV_sms3.png, id=456, 481.8pt x 803.0pt>
 File: figuras/GV_sms3.png Graphic file (type png)
 
 <use figuras/GV_sms3.png> [41 <./figuras/GV_sms1.png (PNG copy)> <./figuras/GV_
 sms2.png (PNG copy)> <./figuras/GV_sms3.png (PNG copy)>]
-<figuras/tv_control.png, id=484, 715.67375pt x 453.695pt>
+<figuras/tv_control.png, id=467, 715.67375pt x 453.695pt>
 File: figuras/tv_control.png Graphic file (type png)
 
 <use figuras/tv_control.png> [42] [43 <./figuras/tv_control.png (PNG copy)>]
@@ -678,13 +684,13 @@ Cap\'{\i }tulo 4.
 [44
 
 ]
-Overfull \hbox (12.93507pt too wide) in paragraph at lines 537--538
+Overfull \hbox (12.93507pt too wide) in paragraph at lines 526--527
 \T1/cmr/m/n/12 Eletrônica da Uni-ver-si-dade Fed-eral do Rio de Janeiro (UFRJ) 
 desde março/2002
  []
 
 
-Overfull \hbox (3.26776pt too wide) in paragraph at lines 549--550
+Overfull \hbox (3.26776pt too wide) in paragraph at lines 538--539
 []\T1/cmr/m/n/12 Ambas metodolo-gias foram ilustradas implementando-as em duas 
 platafor-
  []
@@ -693,33 +699,33 @@ platafor-
 Cap\'{\i }tulo 5.
 [46
 
-] <figuras/scatternet.jpg, id=512, 426.84468pt x 204.01219pt>
+] <figuras/scatternet.jpg, id=495, 426.84468pt x 204.01219pt>
 File: figuras/scatternet.jpg Graphic file (type jpg)
 
 <use figuras/scatternet.jpg> [47]
-<figuras/zigbee.jpg, id=520, 420.6114pt x 479.8728pt>
+<figuras/zigbee.jpg, id=503, 420.6114pt x 479.8728pt>
 File: figuras/zigbee.jpg Graphic file (type jpg)
  <use figuras/zigbee.jpg>
 [48 <./figuras/scatternet.jpg>] [49 <./figuras/zigbee.jpg>] [50]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 597.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 586.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3907) in paragraph at lines 617--621
+Underfull \hbox (badness 3907) in paragraph at lines 606--610
 []\T1/cmr/m/n/12 DELICATO, FC, \T1/cmr/m/it/12 Mid-dle-ware Baseado em Serviços
  para Re-des
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 617--621
+Underfull \hbox (badness 5331) in paragraph at lines 606--610
 \T1/cmr/m/it/12 de Sen-sores Sem Fio\T1/cmr/m/n/12 , Dis-ser-tação de Doutorado
 , En-gen-haria
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 623--625
+Underfull \hbox (badness 1789) in paragraph at lines 612--614
 []\T1/cmr/m/n/12 LEONARDO RICHARDI-SON, SR, \T1/cmr/m/it/12 REST-Ful Web Serice
 s\T1/cmr/m/n/12 , 2007,
  []
@@ -728,82 +734,73 @@ s\T1/cmr/m/n/12 , 2007,
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
 []\T1/cmr/m/n/12 Google I/O 2010 - [][]$\T1/cmtt/m/n/12 http : / / www . google
  . com / events / io / 2010 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 [][][]$\T1/cmtt/m/n/12 http : / / googleblog . blogspot . com / 2007 / 11 / whe
 res-[]my-[]gphone .
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 669--670
+Underfull \hbox (badness 4647) in paragraph at lines 658--659
 []\T1/cmr/m/n/12 Linguagem de Pro-gra-mação Ar-duino - [][]$\T1/cmtt/m/n/12 htt
 p : / / arduino . cc / en /
  []
 
 [52]
-Underfull \hbox (badness 1852) in paragraph at lines 694--695
+Underfull \hbox (badness 1852) in paragraph at lines 683--684
 []\T1/cmr/m/it/12 Android NDK \T1/cmr/m/n/12 - [][]$\T1/cmtt/m/n/12 http : / / 
 developer . android . com / sdk / ndk / index .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--708
+Underfull \hbox (badness 10000) in paragraph at lines 696--697
 []\T1/cmr/m/it/12 RecognizerIntent \T1/cmr/m/n/12 - [][]$\T1/cmtt/m/n/12 http :
  / / developer . android . com / reference /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 710--711
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
 []\T1/cmr/m/it/12 Handcent SMS \T1/cmr/m/n/12 - [][]$\T1/cmtt/m/n/12 http : / /
  developer . android . com / reference /
  []
 
-[53]
-Ap\^endice A.
-
-Overfull \hbox (6.5099pt too wide) in paragraph at lines 720--744
-[][] 
- []
-
-[54
-
-] (./pf.aux) ) 
+[53] (./pf.aux) ) 
 Here is how much of TeX's memory you used:
- 8549 strings out of 495061
- 122207 string characters out of 1182621
- 199363 words of memory out of 3000000
- 11376 multiletter control sequences out of 15000+50000
- 22653 words of font info for 58 fonts, out of 3000000 for 9000
+ 8536 strings out of 495061
+ 122045 string characters out of 1182621
+ 195210 words of memory out of 3000000
+ 11369 multiletter control sequences out of 15000+50000
+ 21887 words of font info for 57 fonts, out of 3000000 for 9000
  34 hyphenation exceptions out of 8191
- 44i,15n,45p,1314b,551s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600
-pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/
-bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/bruno/.texm
-f-var/fonts/pk/ljfour/jknappen/ec/ecbi1728.600pk> </home/bruno/.texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/
-jknappen/ec/ecrm0700.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecrm0800.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.6
-00pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </hom
-e/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/bruno/.te
-xmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/bruno/.texmf-var/fon
-ts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/bruno/.texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecbx1200.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecbx1440.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440
-.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pf.pdf (57 pages, 1631299 bytes).
+ 44i,15n,45p,1497b,551s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.
+600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600pk> </ho
+me/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1728.600pk> </home/bruno/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/bruno/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/bruno/.texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecrm0700.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen
+/ec/ecrm0800.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
+0.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </
+home/bruno/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/bruno/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/bruno/.texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/bruno/.texmf-var/fonts/pk/lj
+four/jknappen/ec/ecbx1440.600pk> </home/bruno/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbi1440.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb>
+Output written on pf.pdf (56 pages, 1603763 bytes).
 PDF statistics:
- 1211 PDF objects out of 1440 (max. 8388607)
- 146 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1111 PDF objects out of 1200 (max. 8388607)
+ 141 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 

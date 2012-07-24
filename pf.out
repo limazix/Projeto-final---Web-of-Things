@@ -1,6 +1,4 @@
 \BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}
-\BOOKMARK [1][-]{section.1.1}{Objetivos}{chapter.1}
-\BOOKMARK [1][-]{section.1.2}{Organiza\347\343o do Trabalho}{chapter.1}
 \BOOKMARK [0][-]{chapter.2}{Fundamentos}{}
 \BOOKMARK [1][-]{section.2.1}{Web of Things - WoT}{chapter.2}
 \BOOKMARK [2][-]{subsection.2.1.1}{N\363s como Recursos RESTful}{section.2.1}
@@ -19,9 +17,8 @@
 \BOOKMARK [2][-]{subsection.3.2.3}{Camada de Abstra\347\343o}{section.3.2}
 \BOOKMARK [1][-]{section.3.3}{Aplica\347\343o}{chapter.3}
 \BOOKMARK [2][-]{subsection.3.3.1}{Cliente REST para Android}{section.3.3}
-\BOOKMARK [2][-]{subsection.3.3.2}{Sistema de Reconhecimento de Fala para Android}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Sistema de Reconhecimento de Fala no Android}{section.3.3}
 \BOOKMARK [0][-]{chapter.4}{Trabalhos Correlatos}{}
-\BOOKMARK [0][-]{chapter.5}{Conclus\343o e Trabalhos Futuros}{}
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}
 \BOOKMARK [1][-]{section.5.1}{Trabalhos Futuros}{chapter.5}
 \BOOKMARK [0][-]{section.5.1}{Refer\352ncias Bibliogr\341ficas}{}
-\BOOKMARK [0][-]{appendix.A}{Configura\347\343o Galax 5}{}

@@ -87,17 +87,13 @@
 
 \chapter{Introdução}
 
-Hoje em dia, a informática como um todo, tem estado cada vez mais presente no cotidiano das pessoas. Isto se dá pela baratização dos diversos dispositivos eletrônicos e computacionais assim como as facilidades proporcionadas pelos mesmo. Tais facilitações, além de promover comodidade e praticidade ao público geral, se bem empregados, propiciam uma melhor qualidade de vida e independência funcional a portadores de necessidades especiais (Pessoas com Deficiência – PCD). Como por exemplo, leitores de tela para cegos, sistemas que utilizam reconhecimento de voz para usuários que não possuem movimentos em seus membros e muitos outros.
+Hoje em dia, a informática como um todo tem estado cada vez mais presente no cotidiano das pessoas. Isto se dá pela diminuição do custo de diversos dispositivos eletrônicos e computacionais, assim como pelo aumento das facilidades proporcionadas pelos mesmos. Tais facilidades, além de promoverem uma maior comodidade e praticidade ao público geral, se bem empregados, propiciam uma melhor qualidade de vida e independência funcional aos portadores de necessidades especiais (Pessoas com Deficiência – PCD). Como por exemplo, leitores de tela para cegos, sistemas que utilizam reconhecimento de voz para usuários que não possuem movimentos em seus membros e muitos outros.
 
-O objetivo do sistema proposto neste trabalho visa promover independência funcional à portadores de lesão severas, como tetraplégicos, portadores de ELA (Esclerose Lateral Amiotrófica) e afins, quanto a utilização de determinados aparelhos eletroeletrônicos. Uma possível solução consiste em virtualizar o acesso à eles o que os permite ser controlados e gerenciados no mundo virtual. Entretanto, estes, em sua grande maioria, formam diversas pequenas ilhas de incompatibilidade. Isto ocorre devido a falta de padronização de seus protocolos e, apesar de alguns possuírem acesso a internet, o fato de não poderem ser controlados ou monitorados com a presença de programas não licenciados tornam ainda mais difícil a integração entre eles.
+Um exemplo de sucesso na integração entre componentes com arquiteturas, hardware e software, completamente diferentes é a internet. Nessa estrutura, aparelhos espalhados ao redor do mundo podem interagir sem nem mesmo se conhecerem um ao outro. Baseado neste princípio surge a \emph{Internet of Things}\cite{IoT} que tem explorado o desenvolvimento de aplicativos para dispositivos com o intuito de integrá-los ao mundo virtual. Desta forma, todos os objetos que possuam reforço digital adequado passariam a ser ``visíveis'' na rede. Porém, apenas posicioná-los na rede não é suficiente, é preciso que estes sejam integrados à web, na camada de aplicação, daí vem o conceito da \emph{Web of Things} \cite{wotdovad}, que é colocado como um refinamento da \emph{Internet of Things}, nesta estrutura os dispositivos tornam-se parte de um ambiente em que cada um fornece múltiplas aplicações/serviços diversificados a outros diferentes em hardware e software igualmente integrados.
 
-Um exemplo de sucesso na integração entre componentes com arquiteturas, hardware e software, completamente diferentes é a internet. Nesta estrutura aparelhos espalhados ao redor do globo podem interagir sem nem mesmo conhecer um ao outro. Baseado neste princípio surge a \emph{Internet of Things}\cite{IoT} que tem explorado o desenvolvimento de aplicativos para dispositivos com o intuito de integrá-los ao mundo virtual. Desta forma, todos os objetos que possuam reforço digital passariam a ser ``visível'' na rede. Porem, apenas posicioná-los na rede não é suficiente, é preciso que estes sejam integrados à web, na camada de aplicação, daí vem o conceito da \emph{Web of Things} \cite{wotdovad}, que é posto como um refinamento da \emph{Internet of Things}, nesta estrutura os dispositivos tornam-se parte de um ambiente em que cada um fornece múltiplas aplicações/serviços diversificados à outros diferentes em hardware e software igualmente integrados.
+O objetivo do sistema proposto neste trabalho é promover a independência funcional de portadores de lesão severas, como tetraplégicos, portadores de ELA (Esclerose Lateral Amiotrófica) e afins, permitindo a utilização de determinados aparelhos eletroeletrônicos. A solução aqui proposta consiste em virtualizar o acesso a esses aparelhos, de modo que possam ser controlados e gerenciados remotamente. Entretanto, esses aparelhos, em sua grande maioria, formam diversas pequenas ilhas de incompatibilidade. Isto ocorre devido à falta de padronização de seus protocolos e, apesar de alguns possuírem acesso à internet, o fato de não poderem ser controlados ou monitorados com a presença de programas não proprietários, tornam ainda mais difícil esse objetivo.
 
-Para um melhor entendimento deste material serão apresentados à seguir os objetivos deste trabalho assim como sua organização, respectivamente.
-
-\section{Objetivos}
-
-O objetivo central deste trabalho é propor um sistema que confira independência funcional à PCD's fazendo uso da arquitetura \emph{Web of Things} para o desenvolvimento de um ambiente inteligente - \emph{Smart Building}. Seguindo esses preceitos e sem perdas de generalidade, objetivou-se desenvolver uma estrutura que permita ao usuário controlar um aparelho televisor utilizando apenas a sua voz. Para tal foi necessário:
+A proposta central deste trabalho é  de um sistema que confira independência funcional a PCDs fazendo uso da arquitetura \emph{Web of Things} para o desenvolvimento de um ambiente inteligente - \emph{Smart Building}. Seguindo esses preceitos e sem perdas de generalidade, objetivou-se desenvolver uma estrutura que permita ao usuário controlar um aparelho televisor utilizando apenas a sua voz. Para tal foi necessário:
 \begin{itemize}
 \item A implementação de um sistema de reconhecimento da fala para um \emph{Smartphone Android 3.2} para o reconhecimento dos comandos feitos pelo usuário.
 \item A implementação de um cliente Hypertext Transfer Protocol (HTTP) em um \emph{Smartphone Android 3.2} utilizado para fazer as requisição dos recursos disponíveis.\footnote{Recursos disponíveis - referem-se as ações que podem ser executadas pelos atuadores disponíveis}
@@ -105,9 +101,7 @@ O objetivo central deste trabalho é propor um sistema que confira independênci
 \item A implementação do atuador responsável por executar as requisições feitas pelo usuário.
 \end{itemize}
 
-\section{Organização do Trabalho}
-
-Este trabalho esta organizado da seguinte maneira: o Capítulo \ref{chap:fundamentos} apresenta todos os fundamentos necessários para o desenvolvimento de cada estrutura integrante de um \emph{Smart Building} com arquitetura \emph{Web of Things}, além dos fundamentos que envolvem um sistema de reconhecimento de fala, incluindo as etapas de treinamento dos modelos - acústicos e linguísticos - e a etapa de decodificação. O Capítulo \ref{chap:funcionamento} detalha a implementação de cada componente desenvolvido. O Capítulo \ref{chap:trabalhos-correlatos} apresenta os trabalhos que serviram de base e inspiração para este projeto. E por fim, o Capítulo \ref{chap:conclusao} conclui o projeto explicitado os resultados alcançados e propondo modificações futuras e possíveis expansões.
+Este trabalho está organizado da seguinte maneira: o Capítulo \ref{chap:fundamentos} apresenta todos os fundamentos necessários para o desenvolvimento de cada estrutura integrante de um \emph{Smart Building} com arquitetura \emph{Web of Things}, além dos conceitos que envolvem um sistema de reconhecimento de fala, incluindo as etapas de treinamento dos modelos - acústicos e linguísticos - e a etapa de decodificação. O Capítulo \ref{chap:funcionamento} detalha a implementação de cada um dos componentes desenvolvidos neste projeto. O Capítulo \ref{chap:trabalhos-correlatos} apresenta os trabalhos que serviram de base e inspiração para este projeto. E por fim, o Capítulo \ref{chap:conclusao} mostra os resultados alcançados e propõe modificações futuras e possíveis expansões.
 
 \chapter{Fundamentos}
 \label{chap:fundamentos}
@@ -116,9 +110,9 @@ Neste capítulo serão apresentados os principais fundamentos que envolvem a imp
 
 Na Seção 2.1, o conceito de \emph{Web of Things} será brevemente apresentado e as estruturas possíveis para implantação do mesmo.
 
-Nas Seções 2.2 e 2.3, os fundamentos referentes a camada de interação com o usuário serão vistos e distribuídos da seguinte forma:
+Nas Seções 2.2 e 2.3, os fundamentos referentes à camada de interação com o usuário serão vistos e distribuídos da seguinte forma:
 \begin{itemize}
-    \item Na Seção 2.2, o sistema operacional Android será apresentado de modo à justificar sua escolha, ressaltando pontos positivos e negativos que foram ponderados.
+    \item Na Seção 2.2, o sistema operacional Android será apresentado de modo a justificar sua escolha, ressaltando pontos positivos e negativos que foram ponderados.
     \item Na Seção 2.3, as etapas que envolvem um Sistema de Reconhecimento de Palavras Isoladas são brevemente descritas e apresentadas em forma de diagrama. Nas subseções que seguem, os conceitos que envolvem cada etapa do sistema são apresentados de forma mais detalhada.
 \end{itemize}
 
@@ -129,7 +123,7 @@ E, por fim, na Seção 2.4, o microcontrolador Arduino será visto, pois este fo
 %
 \section{\emph{Web of Things} - WoT}
 
-A realização da \emph{Web of Things} requer a extensão da Web existente para que os objetos do mundo real e dispositivos embarcados possam interagir com ela. Entretanto, muitos destes dispositivos, apesar de possuírem microcontroladores, não conseguem conectar-se à Web, seja por limitações de \emph{hardware} (ex.: não possui uma placa Ethernet) ou de \emph{software}. Para contornar este problema é possível utilizar uma rede de sensores/atuadores onde cada um deste supre as carências específicas de cada aparelho, consequentemente possibilitando sua integração e interação.
+A realização da \emph{Web of Things} requer a extensão da Web existente para que os objetos do mundo real e dispositivos embarcados possam interagir com ela. Entretanto, muitos destes dispositivos, apesar de possuírem microcontroladores, não conseguem conectar-se à Web, seja por limitações de \emph{hardware} (p. ex.: não possuem uma placa Ethernet) ou de \emph{software}. Para contornar este problema é possível utilizar uma rede de sensores/atuadores onde cada um destes supre as carências específicas de cada aparelho, consequentemente possibilitando sua integração e interação.
 
 Ao invés de utilizar os protocolos Web apenas para transporte de dados, comumente utilizado em \emph{Web Services}, pretende-se fazer os dispositivos uma parte integral da mesma, usando o protocolo HTTP na camada de aplicação. Desta forma, as funcionalidades dos dispositivos do mundo real são disponíveis através da \emph{API RESTful} \cite{restws} sobre HTTP, como apresentado a seguir.
 
@@ -137,11 +131,11 @@ Ao invés de utilizar os protocolos Web apenas para transporte de dados, comumen
 
 O termo \emph{Representational State Transfer} (REST)\cite{w3curi} se referia, originalmente, a um conjunto de princípios de arquitetura. Na atualidade se usa no sentido mais amplo para descrever qualquer interface web simples que utiliza \emph{Extensible Markup Language} (XML)\cite{w3cxml}, \emph{Yeat Another Markup Language} (YAML)\cite{yaml}, \emph{Javascript Object Notation} (JSON)\cite{json}, ou texto puro sobre HTTP, sem as abstrações adicionais dos protocolos baseados em padrões de trocas de mensagem, como o protocolo de serviços \emph{Simple Object Access Protocol} (SOAP)\cite{w3csoap}.
 
-Em particular, REST usa a Web como uma plataforma de aplicação e, desta forma, todos os recursos agregados ao protocolo HTTP como: autenticação, encriptação, compressão, e cache. E assim, recursos podem ser acessados e seus resultados são visíveis por qualquer aplicação que possua um cliente HTTP, navegadores Web por exemplo, sem a necessidade de gerar códigos com auto grau de complexidade para interagir com o serviço.
+Em particular, REST usa a Web como uma plataforma de aplicação e, desta forma, todos os recursos agregados ao protocolo HTTP como: autenticação, encriptação, compressão, e cache. Assim, recursos podem ser acessados e seus resultados são visíveis por qualquer aplicação que possua um cliente HTTP, navegadores Web por exemplo, sem a necessidade de gerar códigos com auto grau de complexidade para interagir com o serviço.
 
 Para tanto, REST possui duas regras básicas: 
 \begin{itemize}
-  \item Todo modelo de aplicação deixa de centrar-se em operações e passa a centrar-se em dados, i.e., tudo que oferece serviço torna-se uma fonte que pode ser identificada, sem ambiguidade, por uma URI. 
+  \item Todo modelo de aplicação deixa de centrar-se em operações e passa a centrar-se em dados, isto é, tudo que oferece serviço torna-se uma fonte que pode ser identificada, sem ambiguidade, por uma URI. 
   \item As quatro principais operações provenientes do HTTP (GET, POST, PUT, DELETE) são as únicas operações possíveis nas fontes, definindo assim, uma interface uniforme conhecida e difundida. 
 \end{itemize}
 
@@ -166,12 +160,14 @@ Baseado nestes princípios, o trabalho de Guinard \cite{wotdovad} apresente duas
     \label{http-centralizado}
 \end{figure}
 
+%% Falta citar a referencia de onde as figuras foram retiradas
+
 Para este trabalho, foi escolhido o segundo modelo, pois o microcontrolador utilizado no protótipo não possui nenhum \emph{HTTP Server} já implementado ou qualquer biblioteca disponível, portanto, para o primeiro modelo, haveria a necessidade de desenvolver tal estrutura o que não é o propósito deste trabalho.
 
 Por fins didáticos, a estrutura escolhida será dividida em três níveis:
 \begin{itemize}
-    \item \textbf{Rede de Atuadores e Sensores Sem Fio (RASSF)} - constitui-se dos dispositivos (atuadores e sensores) que interagem com o ambiente e aparelhos de modo a prover serviços. O papel destes dispositivos é coletar dados do ambiente e executar apropriadas ações baseadas nos mesmos e/ou nas requisições das camadas a cima (cliente/usuário ou SG). No protótipo deste trabalho tais dispositivos serão desenvolvidos utilizado o microcontrolador Arduino, como dito no início deste capítulo;
-    \item \textbf{\emph{Smart Gateway} (SG)} - constitui-se da estrutura responsável por permitir o acesso dos serviços providos pela RASSF através da Web. O seu objetivo central é abstrair os protocolos de comunicação proprietários ou APIs dos dispositivos e prover acesso à suas funcionalidades via RESTful;
+    \item \textbf{Rede de Atuadores e Sensores Sem Fio (RASSF)} - constitui-se dos dispositivos (atuadores e sensores) que interagem com o ambiente e aparelhos de modo a prover serviços. O papel destes dispositivos é coletar dados do ambiente e executar ações apropriadas baseadas nos mesmos e/ou nas requisições das camadas acima (cliente/usuário ou SG). No protótipo deste trabalho tais dispositivos serão desenvolvidos utilizado o microcontrolador Arduino, como dito no início deste capítulo;
+    \item \textbf{\emph{Smart Gateway} (SG)} - constitui-se da estrutura responsável por permitir o acesso dos serviços providos pela RASSF através da Web. O seu objetivo central é abstrair os protocolos de comunicação proprietários ou APIs dos dispositivos e prover acesso às suas funcionalidades via RESTful;
     \item \textbf{Aplicação} - constitui-se do componente responsável por emitir um conjunto de consultas ou interesses, que descrevem as características dos fenômenos físicos que o usuário deseja analisar ou requisitar alterações/ações. Como este trabalho prima por acessibilidade, nesta camada foi desenvolvido um sistema de reconhecimento da fala para o português brasileiro no Sistema Operacional Android na versão 3.2 de sua API, formando um estrutura \emph{command-control} acessível aos usuários.
 \end{itemize}
 
@@ -194,15 +190,15 @@ Por fins didáticos, a estrutura escolhida será dividida em três níveis:
 
 Em dias anteriores ao Twitter e Facebook, quando a Google não passava de um vislumbre nos olhos de seus fundadores, telefones móveis eram apenas isto - aparelhos portáteis tão pequenos que cabiam em pastas e munidos de baterias que podiam durar várias horas. E, além disso, ofereciam a liberdade de fazer ligações sem estarem fisicamente conectados a uma linha.
 
-Incrivelmente pequenos, estilosos e dotados de funcionalidades os telefones móveis hoje são indispensáveis para vida cotidiana. Os avanços em \emph{hardware} os fizeram menores e mais eficientes enquanto eram inclusos inúmeros periféricos. Após as câmeras e os tocadores de música, estes possuem GPS, acelerômetros e telas \emph{touch screens}. E mais, estas inovações em \emph{hardware} proveu um campo fértil para o desenvolvimento em \emph{software}.
+Incrivelmente pequenos, estilosos e dotados de funcionalidades os telefones móveis hoje são indispensáveis para vida cotidiana. Os avanços em \emph{hardware} os fizeram menores e mais eficientes enquanto eram inclusos inúmeros periféricos. Após as câmeras e os tocadores de música, estes possuem GPS, acelerômetros e telas \emph{touch screens}. E mais, estas inovações em \emph{hardware} forneceram um campo fértil para o desenvolvimento em \emph{software}.
 
-Originário de um grupo de companhias conhecido como \emph{Open Handset Allience - OHA} liderado pela \emph{Google}, o \emph{Android} é uma nova estrutura de sistema operacional desenvolvida para dispositivos móveis com grande poder de \emph{hardware}. Hoje muitas companhias, tanto membros originais da OHA e outras, tem investido intensamente neste sistema, de modo à alocar significativos recursos de engenharia para aperfeiçoar o sistema operacional e trazer dispositivos que o portam ao mercado.
+Originário de um grupo de companhias conhecido como \emph{Open Handset Allience - OHA} liderado pela \emph{Google}, o \emph{Android} é uma nova estrutura de sistema operacional desenvolvida para dispositivos móveis com grande poder de \emph{hardware}. Hoje muitas companhias, tanto membros originais da OHA e outras, tem investido intensamente neste sistema, de modo a alocar significativos recursos de engenharia para aperfeiçoar o sistema operacional e trazer dispositivos que o portam ao mercado.
 
-\emph{Windows Mobile}, o \emph{iPhone} da \emph{Apple} e o \emph{Palm Pre} proveem um rico e simples ambiente de desenvolvimento para aplicações móveis. Entretanto, diferente da \emph{Android}, estes são construídos em sistemas operacionais proprietários que, em certos casos priorizam aplicações nativas em detrimento das feitas por terceiros, assim como, em certos casos, restringem e/ou controlam a veiculação das mesmas, alem de se limitarem a comunicação entre aplicações e dados nativas.
+O \emph{Windows Mobile}, o \emph{iPhone} da \emph{Apple} e o \emph{Palm Pre} provêem um  ambiente de desenvolvimento rico e simples para aplicações móveis. Entretanto, diferente do \emph{Android}, estes são construídos em sistemas operacionais proprietários que, em certos casos priorizam aplicações nativas em detrimento das feitas por terceiros, assim como, em certos casos, restringem e/ou controlam a veiculação das mesmas, alem de se limitarem a comunicação entre aplicações e dados nativas.
 
-Em oposição as estruturas supracitadas, o \emph{Android} oferece uma nova possibilidade para aplicações móveis disponibilizando um ambiente de desenvolvimento baseado no \emph{kernel Linux} o qual é \emph{open-source}. O acesso à \emph{hardware} é permitido à todas aplicações através de uma série da bibliotecas e interações entre as aplicações nativas. Todas as aplicações possuem o mesmo grau de importância, sejam elas nativas ou de terceiros, pois ambos os grupos são desenvolvidos com a mesma API, executadas no mesmo tempo de execução e o usuário pode remover/substituir qualquer aplicação nativa, até mesmo o discador ou a interface do painel principal e substituir por uma sua, se este for o caso.
+Em oposição às estruturas supracitadas, o \emph{Android} oferece uma nova possibilidade para aplicações móveis disponibilizando um ambiente de desenvolvimento baseado no \emph{kernel Linux} o qual é \emph{open-source}. O acesso ao \emph{hardware} é permitido a todas aplicações através de uma série de bibliotecas e interações entre as aplicações nativas. Todas as aplicações possuem o mesmo grau de importância, sejam elas nativas ou de terceiros, pois ambos os grupos são desenvolvidos com a mesma API, executadas no mesmo tempo de execução e o usuário pode remover/substituir qualquer aplicação nativa, até mesmo o discador ou a interface do painel principal e substituir por uma sua, se este for o caso.
 
-Desta forma, o Android SDK facilita a integração de entradas de fala em aplicações de terceiros. Para tal, faz-se uso do serviço de reconhecimento em dispositivos, o qual esta registrado para receber a \emph{RecognizerIntent}\cite{recintent}. Um grande exemplo é o aplicativo \emph{Google's Voice Search}, que vem instalado na maioria dos dispositivos com sistema operacional Android, este responde à \emph{RecognizerIntent} enviando \emph{streams} de áudio ao servidor da Google onde é processado e retorna um conjunto com os resultados mais possíveis, com base em seus dados. O grande empecilho está no fato do aparelho necessitar estar conectado à internet. Portanto, sem rede o sistema de reconhecimento não funciona. Entretanto, para o propósito deste trabalho este o é suficiente.
+Desta forma, o Android SDK facilita a integração de entradas de fala em aplicações de terceiros. Para tal, faz-se uso do serviço de reconhecimento em dispositivos, o qual está registrado para receber a \emph{RecognizerIntent}\cite{recintent}. Um grande exemplo é o aplicativo \emph{Google's Voice Search}, que vem instalado na maioria dos dispositivos com sistema operacional Android, este responde a \emph{RecognizerIntent} enviando \emph{streams} de áudio ao servidor da Google onde é processado e retorna um conjunto com os resultados mais prováveis, com base em seus dados. O grande empecilho está no fato de o aparelho necessitar estar conectado à internet. Portanto, sem rede o sistema de reconhecimento não funciona. Entretanto, para o propósito deste trabalho isso é o suficiente.
 
 \section{Sistema para Reconhecimento da Fala}
 
@@ -222,16 +218,11 @@ p}\caption{Diagrama das etapas envolvidas em um sistema CSR.}
 
 \subsection{Extração de Parâmetros do Sinal}
 
-
 Para que seja possível processar o sinal de fala para geração do sistema de reconhecimento, torna-se necessária, em uma primeira etapa, a conversão da onda sonora em um sinal digital, que pode ser compreendido pelo computador. O processamento do sinal de fala consiste na amostragem do sinal, janelamento e extração de parâmetros que serão relevantes para o processo de reconhecimento. A extração dos parâmetros é um dos assuntos mais importantes na área de reconhecimento de fala.
 
-A função principal desta etapa de extração de parâmetros é a da divisão do sinal em blocos - supondo que o sinal de fala pode ser considerado estacionário durante um período de tempo muito pequeno, de alguns milissegundos - e derivação de uma estimativa suavizada do espectro a partir de cada bloco. Em um configuração considerada padrão,
-esses blocos - usualmente chamados de janelas - possuem duração de 25ms e são obtidos a cada 10ms (o que é conhecido por \emph{frame shift}). Ainda, o sistema usa blocos sobrepostos de forma a capturar a informação contida nos seus limites.
+A função principal desta etapa de extração de parâmetros é a da divisão do sinal em blocos - supondo que o sinal de fala pode ser considerado estacionário durante um período de tempo muito pequeno, de alguns milissegundos - e derivação de uma estimativa suavizada do espectro a partir de cada bloco. Em um configuração considerada padrão, esses blocos - usualmente chamados de janelas - possuem duração de 25ms e são obtidos a cada 10ms (o que é conhecido por \emph{frame shift}). Ainda, o sistema usa blocos sobrepostos de forma a capturar a informação contida nos seus limites.
 
-Após essa fase, é aplicada uma transforma de Fourier a cada bloco, passando os valores obtidos do domínio do tempo para o domínio da frequência.
-Depois é feita uma filtragem, com o objetivo de extrair os parâmetros que permitam mais facilmente o reconhecimento da fala. A saída é um vetor de valores filtrados, comumente chamados de mel-spectrum \cite{Cepstrum}, cada um correspondendo ao resultado da filtragem do espectro de frequências da entrada por um filtro individual. Então, o comprimento do vetor de saída é igual ao número de filtros criados.
-As constantes que definem essa filtragem são o número de filtros (cujas frequências centrais estão em uma escala logarítimica, conforme o ouvido humano), a frequência mínima e a frequência máxima.
-As frequências máxima e mínima dependem da origem do sinal de voz. Para uma fala em um sistema de telefonia, com frequências de corte de 300 e 3700 Hz, o uso de limites fora desses valores significa apenas perda de banda.
+Após essa fase, é aplicada uma transformada de Fourier a cada bloco, passando os valores obtidos do domínio do tempo para o domínio da frequência. Depois é feita uma filtragem, com o objetivo de extrair os parâmetros que permitam mais facilmente o reconhecimento da fala. A saída é um vetor de valores filtrados, comumente chamados de mel-spectrum \cite{Cepstrum}, cada um correspondendo ao resultado da filtragem do espectro de frequências da entrada por um filtro individual. Então, o comprimento do vetor de saída é igual ao número de filtros criados. As constantes que definem essa filtragem são o número de filtros (cujas frequências centrais estão em uma escala logarítimica, conforme o ouvido humano), a frequência mínima e a frequência máxima. As frequências máxima e mínima dependem da origem do sinal de voz. Para uma fala em um sistema de telefonia, com frequências de corte de 300 e 3700 Hz, o uso de limites fora desses valores significa apenas perda de banda.
 
 Para uma fala clara, a frequência mínima deve estar acima de 100 Hz, para livrar-se de possíveis interferências da corrente alternada (50/60 Hz) e também porque normalmente não informação útil abaixo desta frequência.
 
@@ -271,8 +262,7 @@ A Figura \ref{fig:exemploHMM} representa um HMM com três estados emissores, ond
 \label{fig:exemploHMM}
 \end{figure}
 
-O objetivo da modelagem é encontrar o ajuste dos parâmetros do modelo que maximize a verossimilhança. Isto é feito através de um algoritmo de reestimação de parâmetros. Dentre eles, o mais usado é o algoritmo de Baum-Welch, também conhecido como \emph{Forward-Backward Algorithm} ou algoritmo de avanço-retorno.
-Além de todos os parâmetros presentes na mistura de gaussianas associada a cada estado, como médias e variâncias, as matrizes de transição entre estados também são consideradas parâmetros do modelo.
+O objetivo da modelagem é encontrar o ajuste dos parâmetros do modelo que maximize a verossimilhança. Isto é feito através de um algoritmo de reestimação de parâmetros. Dentre eles, o mais usado é o algoritmo de Baum-Welch, também conhecido como \emph{Forward-Backward Algorithm} ou algoritmo de avanço-retorno. Além de todos os parâmetros presentes na mistura de gaussianas associada a cada estado, como médias e variâncias, as matrizes de transição entre estados também são consideradas parâmetros do modelo.
 
 Ainda, de modo a otimizar esses modelos, pode-se utilizar uma técnica de compartilhamento de estados na ocasião do treinamento de fonemas inseridos em contextos diferentes, como no caso dos trifones. Esta técnica pressupõe que alguns fonemas inseridos em diferentes contextos podem não produzir uma variabilidade acústica suficientemente grande para que sejam modelados por HMMs diferentes. Assim, esses trifones podem ser agrupados dentro de um mesmo modelo, através de uma técnica de agrupamento de estados. Geralmente, utilizam-se algoritmos de árvores de decisão.
 Através dessa técnica, constrói-se uma árvore para cada fonema, onde o nó pai corresponde a todos os estados com todos os diferentes contextos em que aquele fonema pode ser inserido (no caso de trifones, contexto à direita e contexto à esquerda), ou seja, mesmo fonema central. Os arcos dessa árvore correspondem a perguntas fonéticas que servirão para agrupar estados dentro de categorias diferentes e, por fim, os estados que caírem dentro de um mesmo nó folha serão agrupados como um único estado.
@@ -302,10 +292,7 @@ Uma vez que, para fins de reconhecimento de fala, o elemento observado não corr
 
 É fácil verificar que a chamada probabilidade a priori P(W) da Equação \ref{equ:decisao} será fornecida pelo modelo de linguagem e a probabilidade condicional P(X|W) será fornecida pelo modelo acústico. Logo, onde se lê probabilidade a priori, leremos a probabilidade de ocorrer uma determinada sequência de palavras e onde se lê probabilidade condicional, leremos a probabilidade de observar uma determinada sequência de vetores dada uma sequência de palavras.
 
-O algoritmo mais utilizado nesta etapa de decodificação é conhecido como algoritmo de Viterbi. Ele consiste em um
-algoritmo de busca síncrono, que procura pelo estado mais provável a cada unidade de tempo. Este algoritmo considera uma
-aproximação, conhecida por aproximação de Viterbi. Como mostrado na Equação \ref{equ:viterbi}, esta aproximação
-considera que, como o objetivo da decodificação é encontrar a melhor sequência de palavras, então, o somatório da
+O algoritmo mais utilizado nesta etapa de decodificação é conhecido como algoritmo de Viterbi. Ele consiste em um algoritmo de busca síncrono, que procura pelo estado mais provável a cada unidade de tempo. Este algoritmo considera uma aproximação, conhecida por aproximação de Viterbi. Como mostrado na Equação \ref{equ:viterbi}, esta aproximação considera que, como o objetivo da decodificação é encontrar a melhor sequência de palavras, então, o somatório da
 Equação \ref{equ:decisao} pode ser substituído pelo máximo, de forma a encontrar a melhor sequência de estados.
 
 \begin{equation}
@@ -325,18 +312,18 @@ De forma a melhorar o desempenho da busca, o decodificador usa duas estratégias
 \label{fig:arduino}
 \end{figure}
 
-Arduino \cite{arduino} é uma plataforma de prototipagem eletrônica \emph{opem-source} baseada em flexibilidade, fácil acesso à \emph{hardware} e \emph{software} destinada à artistas, \emph{designers}, curiosos ou qualquer pessoa interessada em criar objetos ou ambientes interativos.
+Arduino \cite{arduino} é uma plataforma de prototipagem eletrônica \emph{opem-source} baseada em flexibilidade, fácil acesso ao \emph{hardware} e \emph{software} destinada a artistas, \emph{designers}, curiosos ou qualquer pessoa interessada em criar objetos ou ambientes interativos.
 
 Originalmente, este microcontrolador, foi criado como uma plataforma educacional para uma classe de projetos da \emph{Interaction Desing Institute Ivrea} em 2005 com o intuito de suportar mentes artísticas e baseadas a \emph{design}. Focado em simplicidade, busca uma estrutura voltada para um público sem muita base tecnológica.
 
-O Arduino pode perceber o ambiente através de entradas oriundas de uma variedade de sensores e á capaz de executar ações ao seu redor usando controles de luz, motores e outros atuadores. Seu microcontrolador é programado usando a linguagem de programação Arduino \cite{arduinoapi} (baseado em \emph{Wiring} \cite{wiring}) e o ambiente de desenvolvimento Arduino (desenvolvido em Java e baseado em \emph{Processing} \cite{processing}). Projetos em Arduino podem ser auto-suficientes (quando executam sem interferências externas) ou comunicando-se com \emph{softwares} em um computador usando um cabo USB ou combinado com algum componente que permita tráfego de dados sem fio (Ex.: \emph{Shield Bluetooth}).
+O Arduino pode perceber o ambiente através de entradas oriundas de uma variedade de sensores e é capaz de executar ações ao seu redor usando controles de luz, motores e outros atuadores. Seu microcontrolador é programado usando a linguagem de programação Arduino \cite{arduinoapi} (baseado em \emph{Wiring} \cite{wiring}) e o ambiente de desenvolvimento Arduino (desenvolvido em Java e baseado em \emph{Processing} \cite{processing}). Projetos em Arduino podem ser auto-suficientes (quando executam sem interferências externas) ou comunicando-se com \emph{softwares} em um computador usando um cabo USB ou combinado com algum componente que permita tráfego de dados sem fio (Ex.: \emph{Shield Bluetooth}).
 
 Oferecendo tudo que é necessário para uma comunicação ubíqua \cite{Mark Weiser}, sua utilização cresceu de tal maneira que ultrapassou o domínio para o qual foi inicialmente proposto. Hoje é usado nas mais diferentes gamas onde este trabalho é um grande exemplo, pois, sua facilidade de manuseio e a flexibilidade em agregar componentes otimizando a integração com outros dispositivos o torna candidato ideal, posto que, como dito inicialmente, a integração é o ponto chave na implementação de uma \emph{Web of Things}.
 
 \chapter{Funcionamento do Sistema}
 \label{chap:funcionamento}
 
-Neste capítulo será apresentado o protótipo do sistema proposto no início deste documento. Para tal, como foi feito no capitulo 2, o sistema será dividido em níveis:
+Neste capítulo será apresentado o protótipo do sistema proposto no início deste documento. Para tal, como foi feito no Capitulo 2, o sistema será dividido em níveis:
 
 \begin{itemize}
     \item \textbf{RASSF} - será apresentada na primeira seção, de modo a explicitar quais componentes físicos foram utilizados e a arquitetura do programa interno;
@@ -348,7 +335,7 @@ Neste capítulo será apresentado o protótipo do sistema proposto no início de
 
 Na RASSF, os papéis dos sensores e atuadores é coletar dados do ambiente e executar apropriadas ações baseadas nos mesmos e/ou nas requisições das camadas a cima.
 
-Os sensores detectam os fenômenos do ambiente e transmitem esses dados para os atuadores para que eles executem as devidas ações. Entretanto, estes podem ser enviados para o SG, o qual pode delega aos atuadores a execução das ações cabíveis. Esta estrutura de ação é chamada Arquitetura Autônoma (Figura \ref{fig:arquitetura-autonoma} (a)), pois não há existência de intervenção humana. Quando o dado, ao invés de ser processado e executado na própria rede, é enviado para a camada de aplicação através do SG solicitando uma intervenção humana, a estrutura é chamada de Arquitetura Semi-Autônoma (Figura \ref{fig:arquitetura-autonoma} (b)), desde que a ação seja coordenada pelo SG.
+Os sensores detectam os fenômenos do ambiente e transmitem esses dados para os atuadores para que eles executem as devidas ações. Entretanto, estes podem ser enviados para o SG, o qual pode delegar aos atuadores a execução das ações cabíveis. Esta estrutura de ação é chamada Arquitetura Autônoma (Figura \ref{fig:arquitetura-autonoma} (a)), pois não há existência de intervenção humana. Quando o dado, ao invés de ser processado e executado na própria rede, é enviado para a camada de aplicação através do SG solicitando uma intervenção humana, a estrutura é chamada de Arquitetura Semi-Autônoma (Figura \ref{fig:arquitetura-autonoma} (b)), desde que a ação seja coordenada pelo SG.
 
 \begin{figure}[htbp]
    \centering
@@ -357,9 +344,9 @@ Os sensores detectam os fenômenos do ambiente e transmitem esses dados para os 
     \label{fig:arquitetura-autonoma}
 \end{figure}
 
-Dependendo da funcionalidade a ser agregada, uma das duas arquiteturas deve ser usada, ou até mesmo as duas. Como esta sendo proposto um sistema \emph{command-control}, a arquitetura semi-autônoma é a mais propícia, entretanto, para acessibilidade, quanto mais autônoma a arquitetura for, mediante configurações iniciais, maior a independência do usuário. De modo à resolver este dilema o sistema foi implementado utilizando a arquitetura semi-autônoma como base, mas com flexibilidade suficiente para expandi-la e/ou combina-la com uma arquitetura autônoma dependendo da demanda.
+Dependendo da funcionalidade a ser agregada, uma das duas arquiteturas deve ser usada, ou até mesmo as duas. Como esta sendo proposto um sistema \emph{command-control}, a arquitetura semi-autônoma é a mais propícia, entretanto, para acessibilidade, quanto mais autônoma a arquitetura for, mediante configurações iniciais, maior a independência do usuário. De modo a resolver este dilema o sistema foi implementado utilizando a arquitetura semi-autônoma como base, mas com flexibilidade suficiente para expandi-la e/ou combiná-la com uma arquitetura autônoma dependendo da demanda.
 
-Os componentes dos nós sensores e atuadores de uma RASSF podem ser vistos em Figura \ref{fig:componentes-atuador-sensor} (a) e (b), respectivamente.
+Os componentes dos nós sensores e atuadores de uma RASSF podem ser vistos na Figura \ref{fig:componentes-atuador-sensor} (a) e (b), respectivamente.
 
 \begin{figure}[htbp]
    \centering
@@ -370,26 +357,26 @@ Os componentes dos nós sensores e atuadores de uma RASSF podem ser vistos em Fi
 
 Os nós sensores são equipamentos possuidores de uma unidade de força, subsistemas de comunicação (transmissor e receptor), recursos de armazenagem e processamento, Conversores Analógicos para Digitais (\emph{Analog to Digital Converter - ADC}) e unidade de sensoriamento. A unidade de Sensoriamento possui a tarefa de observar fenômenos como: eventos térmicos, óticos ou acústicos. O dado é coletado de forma analógica e convertido para digital através do ADC, daí é analisado pelo processador e então transmitido para os atuadores cabíveis.
 
-A função da unidade de decisão (controlador) é receber a leitura do sensor como entrada e gerar um comando de ação como saída. Tais comandos são convertidos em dado analógico por um Conversor Digital para Analógico (\emph{Digital to Analog Converter - DAC}) e são transformados em ações pelas unidades de atuação.
+A função da unidade de decisão (controlador) é receber a leitura do sensor como entrada e gerar um comando de ação como saída. Tais comandos são convertidos em dados analógicos por um Conversor Digital para Analógico (\emph{Digital to Analog Converter - DAC}) e são transformados em ações pelas unidades de atuação.
 
 Todas as necessidades citadas anteriormente são supridas pelo Arduino UNO, o que combinado com sua facilidade e flexibilidade de desenvolvimento, o tornaram candidato ideal para ser escolhido de modo a compor a rede de atuação e sensoriamento.
 
 Além disso, uma RASSF possui duas características básicas \cite{wsaniais}:
 \begin{itemize}
     \item \textbf{Requerimentos em tempo real}: Em RASSF, dependendo da situação, há a necessidade de uma rápida resposta para em determinado evento. Por exemplo, em incêndio, as ações devem ser iniciadas na área do evento o quanto antes. Além disso os dados coletados devem continuar válidos até o momento da ação.
-    \item \textbf{Coordenação} - Diferentemente das redes de sensores onde a entidade central é responsável pela coleta e processamento dos dados, em  uma RASSF ocorre um outro fenômenos chamado sensor-atuadores e atuadores-atuadores, os quais pode ser vistos no trabalho referenciado por \cite{wsaniais}.
+    \item \textbf{Coordenação} - Diferentemente das redes de sensores onde a entidade central é responsável pela coleta e processamento dos dados, em  uma RASSF ocorre um outro fenômenos chamado sensores-atuadores e atuadores-atuadores, os quais pode ser vistos no trabalho referenciado por \cite{wsaniais}.
 \end{itemize}
 
 Neste trabalho a característica coordenação supracitada não foi implementada, pois foi utilizado apenas um componente atuador que possui a função de controlar um televisor através de um emissor \emph{Infra Red}. Desta forma, somente a característica de requerimento em tempo real se fez necessária, pois, apesar de não ser utilizada neste protótipo, objetivou-se a possível expansão do sistema para uma arquitetura autônoma, como dito anteriormente.
 
-A implementação do programa residente no Arduino capaz de executar as ações requeridas pelo usuário, i.e., controlar efetivamente o aparelho televisor através de um emissor \emph{Infra Red}, foi facilitada devido à utilização da biblioteca IRRemote. Entretanto, para seu perfeito funcionamento, há a necessidade do trenamento da base, o qual consiste na obtenção dos códigos do controle remoto referente à televisão que se deseja controlar. Este treinamento é feito com a própria biblioteca que possui a capacidade de decodificar o sinal de entrada, com o auxílio de um leitor \emph{Infra Red}. Infelizmente, no período de desenvolvimento deste trabalho, este material, leitor \emph{Infra Red}, não estava disponível. Portanto, afim de encontrar uma maneira alternativa de provar o conceito proposto sem perder generalidade ou fugir do escopo, o emissor foi substituído por um LED, pois este, apesar de não ser capaz de controlar um televisor, emula a execução do comando de maneira visível e fácil percepção.
+A implementação do programa residente no Arduino capaz de executar as ações requeridas pelo usuário, i.e., controlar efetivamente o aparelho televisor através de um emissor \emph{Infravermelho}, foi facilitada devido à utilização da biblioteca IRRemote. Entretanto, para seu perfeito funcionamento, há a necessidade do trenamento da base, o qual consiste na obtenção dos códigos do controle remoto referente à televisão que se deseja controlar. Este treinamento é feito com a própria biblioteca que possui a capacidade de decodificar o sinal de entrada, com o auxílio de um leitor \emph{Infravermelho}. Infelizmente, no período de desenvolvimento deste trabalho, este material, leitor \emph{Infravermelho}, não estava disponível. Portanto, afim de encontrar uma maneira alternativa de provar o conceito proposto sem perder generalidade ou fugir do escopo, o emissor foi substituído por um LED, pois este, apesar de não ser capaz de controlar um televisor, emula a execução do comando de maneira visível e de fácil percepção.
 
 \section{Smart Gateway (SG)}
 \label{sec:sg}
 
-Hoje, como a integração direta de dispositivos com a Web ainda é extremamente difícil, dado que muitos destes não suportam protocolos para esses fins, como \emph{Internet Protocol (IP)} ou HTTP que são comumente utilizados em RASSF, uma abordagem diferenciada se faz necessário. O trabalho \cite{wotdovad} propõe o uso do conceito SG como elemento intermediário, propiciando o acesso aos dispositivos pela Web. O objetivo central do SG é abstrair os protocolos de comunicação proprietários ou APIs dos dispositivos e prover acesso à suas funcionalidades via RESTful.
+Hoje, como a integração direta de dispositivos com a Web ainda é extremamente difícil, dado que muitos destes não suportam protocolos para esses fins, como \emph{Internet Protocol (IP)} ou HTTP que são comumente utilizados em RASSF, uma abordagem diferenciada se faz necessário. O trabalho \cite{wotdovad} propõe o uso do conceito SG como elemento intermediário, propiciando o acesso aos dispositivos pela Web. O objetivo central do SG é abstrair os protocolos de comunicação proprietários ou APIs dos dispositivos e prover acesso às suas funcionalidades via RESTful.
 
-Segundo o trabalho referenciado por \cite{sgtriwiguiboh}, a arquitetura de um SG deve ser projetada com base em três princípios: simplicidade, extensibilidade e modularidade. Simplicidade e extensibilidade para permitir a extensão e a customização para atender as necessidades dos usuários. E, Modularidade, para que os componentes internos possam interagir através de pequenas interfaces, permitindo assim, a evolução e troca das partes individuais do sistema.
+Segundo o trabalho referenciado por \cite{sgtriwiguiboh}, a arquitetura de um SG deve ser projetada com base em três princípios: simplicidade, extensibilidade e modularidade. Simplicidade e extensibilidade para permitir a extensão e a customização para atender as necessidades dos usuários. E, modularidade, para que os componentes internos possam interagir através de pequenas interfaces, permitindo assim, a evolução e troca das partes individuais do sistema.
 
 Para tal, sua arquitetura deve ser composta por três camadas principais: camada de apresentação, camada de controle e camada de abstração. A Figura \ref{fig:estrutura-sg} mostra, de forma geral, esta estrutura.
 
@@ -402,13 +389,13 @@ Para tal, sua arquitetura deve ser composta por três camadas principais: camada
 
 Diferente da linguagem utilizada no último trabalho referenciado, uma abordagem diferente foi tomada, pois a linguagem Python oferece uma unidade organizacional que tem por base os três princípios de um SG. Esta arquitetura é chamada de módulo.
 
-Mark Lutz \cite{python} define módulo como a unidade organizacional de programação de auto-nível que empacota códigos de programas e dados para reuso. Em termos concretos, módulos geralmente correspondem à arquivos de programas em Python ou extensões de código em linguagens externas como C, Java, C\# ou etc, onde cada arquivo é um módulo e um módulo importa outros módulos para usar os nomes definidos por estes. Desta forma, os módulos proveem um modo mais fácil de organizar componentes em um sistema. O que é objetivado por um SG.
+Mark Lutz \cite{python} define módulo como a unidade organizacional de programação de alto nível que empacota códigos de programas e dados para reuso. Em termos concretos, módulos geralmente correspondem a arquivos de programas em Python ou extensões de código em linguagens externas como C, Java, C\# ou etc, onde cada arquivo é um módulo e um módulo importa outros módulos para usar os nomes definidos por estes. Desta forma, os módulos provêem um modo mais fácil de organizar componentes em um sistema. O que é objetivado por um SG.
 
-A seguir será apresentado o funcionamento de cada estrutura do SG (Figura \ref{fig:estrutura-sg}) e como foi adaptada para o Python quando esta se fez necessário.
+A seguir será apresentado o funcionamento de cada estrutura do SG (Figura \ref{fig:estrutura-sg}) e como foi adaptada para o Python quando isto se fez necessário.
 
 \subsection{Camada de Apresentação}
 
-A camada de Apresentação torna os componentes do SG acessíveis para a Web. Sendo a fina camada acima da camada de controle, gerencia as requisições dos clientes através de uma interface REST.
+A camada de Apresentação torna os componentes do SG acessíveis para a Web. Sendo uma fina camada acima da camada de controle, que gerencia as requisições dos clientes através de uma interface REST.
 
 Com o intuito de tornar os dispositivos acessíveis através da Web, um mapeamento dos nomes dos dispositivos em \emph{Uniform Resource Identifier (URI)} \cite{w3curi} é executado pela camada de apresentação. O dispositivo nomeado ``sensor1'' será mapeado por ``/sensor1''. Isto permite aos usuários procurar dinamicamente a lista de dispositivos.
 
@@ -420,21 +407,21 @@ Na implementação desta camada nenhuma adaptação foi exigida. A biblioteca/m�
 
 A camada de controle é composta por diversos componentes independentes chamados plugins.
 
-Um plugin é um componente de software que é carregado na inicialização do SG . Sua principal funcionalidade é permitir a acoplagem eficiente dos drivers e, assim, possibilitar o direcionamento, sem ambiguidade, das requisições da camada acima (Camada de Apresentação) para os seus respectivos drivers.
+Um plugin é um componente de software que é carregado na fase de iniciação do SG . Sua principal funcionalidade é permitir a acoplagem eficiente dos drivers e, assim, possibilitar o direcionamento, sem ambiguidade, das requisições da camada acima (Camada de Apresentação) para os seus respectivos drivers.
 
-É permitido à um plugin depender de outros, Entretanto, para manter uma fraca dependência entre os mesmos, deve ser utilizado uma mecanismo de sincronização de modo que, ao ocorrer uma mudança no estado de qualquer dispositivo, o sistema consiga percebe-la e reorganizar-se ao ponto de não permitir as requisições quando não houver recurso disponível (exemplo: o plugin de um determinado dispositivo chama seu método independente do dispositivo estar ausente ou não).
+É permitido a um plugin depender de outros. Entretanto, para manter uma fraca dependência entre os mesmos, deve ser utilizado um mecanismo de sincronização de modo que, ao ocorrer uma mudança no estado de qualquer dispositivo, o sistema consiga percebê-la e reorganizar-se ao ponto de não permitir as requisições quando não houver recurso disponível (exemplo: o plugin de um determinado dispositivo chama seu método independente do dispositivo estar ausente ou não).
 
-Como este trabalho consiste de um sistema extremamente simples existindo apenas um único driver, como será explicitado à seguir, a única funcionalidade desenvolvida nesta camada consiste no mecanismo de sincronização acima definido, de modo a impedir as requisições inexistentes por falta de recursos.
+Como este trabalho consiste de um sistema extremamente simples existindo apenas um único driver, como será explicitado a seguir, a única funcionalidade desenvolvida nesta camada consiste no mecanismo de sincronização acima definido, de modo a impedir as requisições inexistentes por falta de recursos.
 
 \subsection{Camada de Abstração}
 
-Como na maioria dos sistemas operacionais modernos, o SG prove uma camada de abstração para os dispositivos. Para as aplicações no nível acima, todos os dispositivos são vistos da mesma forma, mesmos aqueles com implementações completamente diferentes.
+Como na maioria dos sistemas operacionais modernos, o SG provê uma camada de abstração para os dispositivos. Para as aplicações no nível acima, todos os dispositivos são vistos da mesma forma, mesmos aqueles com implementações completamente diferentes.
 
 A camada de abstração é ilustrada ao lado esquerdo da Figura \ref{fig:estrutura-sg}. Drivers especializados são usados para se comunicar através de seus protocolos proprietários com os respectivos dispositivos físicos (SunSpotDriver utiliza ZigBee com SunSpot).
 
-Para dispositivos que já suportam protocolos Web, a implementação do driver trabalha apenas repassando as requisições da camada de apresentação para os dispositivos. Entretanto, quando o dispositivo não suporta protocolos Web, o driver é responsável por traduzir a requisição para seu protocolo de modo à fazer o dispositivo compreende-lo.
+Para dispositivos que já suportam protocolos Web, a implementação do \emph{driver} trabalha apenas repassando as requisições da camada de apresentação para os dispositivos. Entretanto, quando o dispositivo não suporta protocolos Web, o \emph{driver} é responsável por traduzir a requisição para seu protocolo de modo a fazer o dispositivo compreendê-lo.
 
-Como não foi encontrado no período de desenvolvimento deste trabalho um componente para o Arduino que o permitisse suporta protocolos Web, o uso de qualquer protocolo de comunicação entre ele e o SG não trouxe grande variação, pois, para qualquer padrão utilizado haveria a necessidade da implementação de um driver nesta camada. Logo, sem perdas de generalidade, o protocolo escolhido foi o 802.15 \emph{Bluetooth}. O que consequentemente demandou o desenvolvimento do seu respectivo driver que foi facilitado graças à utilização da biblioteca/módulo Bleuz.
+Como não foi encontrado no período de desenvolvimento deste trabalho um componente para o Arduino que o permitisse suportar protocolos Web, o uso de qualquer protocolo de comunicação entre ele e o SG não trouxe grande variação, pois, para qualquer padrão utilizado haveria a necessidade da implementação de um \emph{driver} nesta camada. Logo, sem perdas de generalidade, o protocolo escolhido foi o 802.15 \emph{Bluetooth}. O que consequentemente demandou o desenvolvimento do seu respectivo \emph{driver} que foi facilitado graças à utilização da biblioteca/módulo Bleuz.
 
 \section{Aplicação}
 
@@ -442,7 +429,7 @@ A aplicação é o componente responsável por emitir um conjunto de consultas o
 
 De modo geral, a ideia central da arquitetura REST reside no conceito de recurso como algum componente de uma aplicação que é valorada por uma identificação única. Na Web as identificações dos recursos é feita pela URI, como dito anteriormente, desta forma os clientes de serviços REST podem seguir esta estrutura para encontrar recursos de modo a interagir com os mesmos, como em navegadores Web. Isto permite aos clientes explorar serviço simplesmente navegando e, em muitos casos, estes vão usar uma variedade de tipos de links para estabelecer diferentes relações entre os recursos disponíveis, estas relações são chamadas de \emph{meshup}. Entretanto, neste trabalho, a geração de tais links não se fez necessário, pois o sistema é extremamente simples e com finalidade de prova de conceito.
 
-Como o SG seguiu a arquitetura REST, é possível acessar os recursos através de qualquer cliente REST, como por exemplo um navegador WEB, desde que se conheça o endereço IP do servidor. Tendo isto em mente, desenvolveu-se uma aplicação para Android com versão 3.2 afim de acessar os recursos disponíveis pelo sistema. Entretanto, apesar da simplicidade da arquitetura do Android, é necessário algumas considerações para fazer o melhor uso deste sistema.
+Como o SG seguiu a arquitetura REST, é possível acessar os recursos através de qualquer cliente REST, como por exemplo um navegador WEB, desde que se conheça o endereço IP do servidor. Tendo isto em mente, desenvolveu-se uma aplicação para Android com versão 3.2 afim de acessar os recursos disponíveis pelo sistema. Entretanto, apesar da simplicidade da arquitetura do Android, são necessárias algumas considerações para fazer o melhor uso deste sistema.
 
 \subsection{Cliente REST para Android}
 
@@ -480,13 +467,13 @@ Cada entidade terá suas funções apresentadas brevemente:
 
 Neste trabalho o componente \emph{Content Provider} supracitado não foi necessário, pois do REST o método GET foi o único implementado, consequentemente, não gerando transição de dados de um banco.
 
-Apesar da aplicação supracitada funcionar de maneira satisfatória, permitindo o acesso aos recursos do SG, esta não garante acessibilidade. Para suprir tal necessidade um novo componente foi desenvolvido. Um reconhecedor de fala utilizando a Google Voice API, como será mostrado a seguir.
+Apesar da aplicação funcionar de maneira satisfatória, permitindo o acesso aos recursos do SG, esta não garante acessibilidade. Para suprir tal necessidade um novo componente foi desenvolvido. Um sistema \emph{command-control} que utiliza a Google Voice API para reconhecimento da fala, como será mostrado a seguir.
 
-\subsection{Sistema de Reconhecimento de Fala para Android}
+\subsection{Sistema de Reconhecimento de Fala no Android}
 
-Esta tecnologia está disponível desde 2009 com a versão 1.5 de sua plataforma. Inicialmente o servidor da Google suportava Inglês, Mandarim e Japonês. Hoje se estende à diversos idiomas inclusive o Português Brasileiro, que é o interesse deste trabalho.
+Esta tecnologia está disponível desde 2009 com a versão 1.5 de sua plataforma. Inicialmente o servidor da Google suportava Inglês, Mandarim e Japonês. Hoje se estende a diversos idiomas inclusive o Português Brasileiro, o qual será utilizado neste trabalho.
 
-Em versões anteriores ao Android 2.2, não era possível desenvolver qualquer sistema sem inicializar a \emph{Activity} referente a este recurso. Um exemplo desta estrutura poder visto no aplicativo \emph{Handcent SMS} \cite{handcent}, mostrado na figura \ref{fig:handcent-sms}, o qual utiliza esta tecnologia para escreve uma mensagem SMS. A partir da versão 2.2, foi desenvolvido uma classe que permite a requisição ao servidor em \emph{background} e mais, esta possui uma conjunto de métodos que geram maior controle sobre este serviço e possibilita uma extração mais refinada dos resultados.
+Em versões anteriores ao Android 2.2, não era possível desenvolver qualquer aplicativo utilizando este recurso sem iniciar sua \emph{Activity} quando ativado, sobrepondo a principal. Um exemplo desta estrutura pode ser visto no aplicativo \emph{Handcent SMS} \cite{handcent}, mostrado na figura \ref{fig:handcent-sms}, o qual utiliza esta tecnologia para escrever uma mensagem SMS (versão 1.5 do Android). A partir da versão 2.2, foi desenvolvida uma classe que permite a requisição ao servidor em \emph{background} e mais, esta possui um conjunto de métodos que geram maior controle sobre este serviço e possibilita uma extração mais refinada dos resultados.
 
 \begin{figure}[h!]
    \centering
@@ -502,7 +489,9 @@ Em versões anteriores ao Android 2.2, não era possível desenvolver qualquer s
     \label{fig:handcent-sms}
 \end{figure}
 
-Neste protótipo, apesar das requisições ao servidor da Google serem executadas assincronamente em relação ao programa principal, já que a versão da plataforma utilizada está na versão 3.2, a interface foi moldada de modo à expor alguns dados destas requisições (ver figura \ref{fig:tv-control}). Um desses dados é o conjunto dos melhores resultados encontrados pelo servidor. Estes são apresentados no canto esquerdo com um formato de lista ordenada com maior prioridade aquele que foi o melhor ranqueado. Outro ponto extremamente relevante é conseguido através de algumas manipulações utilizando os recursos da API. Esta possui um conjunto de métodos capazes de saber quando ocorre o início e fim da fala - microfone capta algo diferente de ruido e/ou silêncio e vice-versa - e quando a requisição é enviada ao servidor e os dados são recebidos, logo, com este conjunto de dados, é possível calcular a relação entre o tempo de processamento do servidor e o tempo do discurso, sem desprezar o tempo de transferência de dados entre o aparelho e o servidor da Google. Este resultado é exposto na base da interface abaixo do melhor resultado retornado.
+Neste protótipo, apesar das requisições ao servidor da Google serem executadas assincronamente em relação ao programa principal, já que a versão da plataforma utilizada está na versão 3.2, a interface foi moldada de modo a expor alguns dados destas requisições (ver figura \ref{fig:tv-control}). Um desses dados é o conjunto dos melhores resultados encontrados pelo servidor. Estes são apresentados no canto esquerdo com um formato de lista ordenada com maior prioridade aquele que foi o melhor ranqueado. Outro ponto extremamente relevante é conseguido através de algumas manipulações utilizando os recursos da API. Esta possui um conjunto de métodos capazes de saber quando ocorre o início e fim da fala - microfone capta algo diferente de ruido e/ou silêncio e vice-versa - e quando a requisição é enviada ao servidor e os dados são recebidos. Logo, com este conjunto de dados, é possível calcular a relação entre o tempo de processamento do servidor e o tempo do discurso, sem desprezar o tempo de transferência de dados entre o aparelho e o servidor da Google. Este resultado é exposto na base da interface, abaixo do campo expositor do melhor resultado retornado.
+
+A possibilidade destas aferições e a praticidade no manuseio, foram determinantes na escolha da utilização deste recurso em detrimento do desenvolvimento de um sistema de reconhecimento de fala. Posto que a realização deste último foge do objetivo deste trabalho.
 
 Como o SG está instalado em um computador móvel, seu endereço IP não é estático. Desta forma, foi criado um campo de entrada de texto, localizado no topo da interface, para a inserção do respectivo endereço do servidor. E, para haver coesão deste novo campo com o restante do sistema, só é possível fazer qualquer tipo de requisição após a definição deste valor.
 
@@ -530,7 +519,7 @@ Desta forma foi possível manejar as funções básicas oferecidas pelo aparelho
 
 Nos dias atuais muito se fala sobre acessibilidade, entretanto, poucos sabem o que de fato este termo significa. De maneira objetiva, acessibilidade significa não apenas permitir que pessoas com deficiências ou mobilidade reduzida participem de atividades que incluem o uso de produtos, serviços e informação, mas a inclusão e extensão do uso destes por todas as parcelas presentes em uma determinada população.
 
-Para que a acessibilidade atinja níveis funcionais à PCDs com lesões severas, torna-se indispensável a utilização de aparatos eletrotécnicos. Um exemplo muito claro é o Motrix \cite{motrix}. Este programa permite que pessoas com deficiências motoras graves, em especial tetraplegia e distrofia muscular, possam ter acesso à microcomputadores, permitindo assim, em especial com a intermediação da Internet, um acesso amplo à escrita, leitura e comunicação utilizando apenas a voz.
+Para que a acessibilidade atinja níveis funcionais a PCDs com lesões severas, torna-se indispensável a utilização de aparatos eletrotécnicos. Um exemplo muito claro é o Motrix \cite{motrix}. Este programa permite que pessoas com deficiências motoras graves, em especial tetraplegia e distrofia muscular, possam ter acesso aos microcomputadores, permitindo assim, em especial com a intermediação da Internet, um acesso amplo a escrita, leitura e comunicação utilizando apenas a voz.
 
 O uso do Motrix torna viável a execução pelo PCD de quase todas as operações que são realizadas por PSD (Pessoa Sem Deficiência), mesmo as que possuem acionamento físico complexo, tais como jogos. Através de um mecanismo inteligente, o computador realiza a parte motora mais difícil destas tarefas possibilitando assim as ações desejadas.
 
@@ -538,7 +527,7 @@ O Projeto Motrix vem sendo desenvolvido no Núcleo de Computação Eletrônica d
 
 Este programa foi a grande inspiração para o sistema desenvolvido neste trabalho. Posto que o objetivo central consiste em expandir as funcionalidades de controle do mundo virtual ao mundo físico, ao ponto do PCD controlar objetos eletrônicos sem o auxílio de PSDs.
 
-Entretanto, controlar objetos físicos ao invés de virtuais é relativamente mais complexo e requer uma abordagem diferenciada. O trabalho \emph{Towards Web of Things} \cite{wotdovad} mostra como tornar objetos do mundo físico acessíveis no mundo virtal. E mais, transforma-os parte integrante da Web fazendo uso de protocolos abertos. Desta forma, qualquer aplicação que conheçam estes padrões pode acessá-los.
+Entretanto, controlar objetos físicos ao invés de virtuais é relativamente mais complexo e requer uma abordagem diferenciada. O trabalho \emph{Towards Web of Things} \cite{wotdovad} mostra como tornar objetos do mundo físico acessíveis no mundo virtal. E mais, transforma-os em parte integrante da Web fazendo uso de protocolos abertos. Desta forma, qualquer aplicação que conheça estes padrões pode acessá-los.
 
 O trabalho apresenta dois modos diferentes de integrar os dispositivos via REST:
 \begin{itemize}
@@ -549,16 +538,16 @@ O trabalho apresenta dois modos diferentes de integrar os dispositivos via REST:
 Ambas metodologias foram ilustradas implementando-as em duas plataformas diferentes. Foi mostrado como um eco-sistema de dispositivos RESTful pode facilitar significativamente a criação de \emph{mashups} físico-virtuáis. E neste processo foi constatada a grande flexibilidade e poderoso mecanismo de prototipagem de aplicações que é oferecido pela combinação do REST e a Web para conectar dispositivos.
 
 
-\chapter{Conclusão e Trabalhos Futuros}
+\chapter{Conclusão}
 \label{chap:conclusao}
 
-Este projeto foi extenso e complexo. A sua multi e interdisciplinaridade gera desdobramentos e empecilhos que desafiam o desenvolvedor à ampliar seus horizontes e mudar seu ponto de vista sobre este prisma de integração muitas vezes escondidos de olhos não treinados. Sua complexidade técnica demanda tempo, paciência e dedicação afim de adquirir o mínimo de conhecimento necessário para executar tal tarefa. Entretanto, este cumpre à que se propõe. Consegue de fato gerar uma certa independência funcional ao grupo objetivado apesar de suas limitações.
+Este projeto foi extenso e complexo. A sua multi e interdisciplinaridade gera desdobramentos e empecilhos que desafiam o desenvolvedor a ampliar seus horizontes e mudar seu ponto de vista sobre este prisma de integração muitas vezes escondidos de olhos não treinados. Sua complexidade técnica demanda tempo, paciência e dedicação afim de adquirir o mínimo de conhecimento necessário para executar tal tarefa. Entretanto, este cumpre ao que se propõe. Consegue de fato gerar uma certa independência funcional ao grupo objetivado apesar de suas limitações.
 
-O reconhecimento da fala é algo que aos poucos tem estado cada vez mais presente no dia à dias da pessoas. Telefones celulares, televisores e outros aparelhos estão sedo comercializados com este tipo de sistema integrados desdas fábricas. Contudo, possui problemas que ainda são extremamente desafiadores perante o atual avanço tecnológico e científico. O reconhecimento robusto, que consiste no reconhecimento da fala em ambientes com barulho, que utiliza processos estocásticos pode não possuir um grau de acerto à níveis aceitáveis dependendo do parâmetro de comparação, o que o torna um tanto relativo. No geral, para o público comum, o parâmetro de comparação é, indubitavelmente, o ouvido humano, pois este é o único ``sistema'' com comportamento similar conhecido pelos mesmos. Logo, um sistema de reconhecimento da fala com taxa de acerto em torno de 80\% (média para reconhecimento contínuo de fala) é algo não muito tolerável. O usuário prefere digitar, usando um editor de texto como exemplo, à corrigir todos os erros gerados pelo sistema. Isto demonstra que, apesar de sua praticidade ainda há um longo caminho à seguir.
+O reconhecimento da fala é algo que aos poucos tem estado cada vez mais presente no dia a dia das pessoas. Telefones celulares, televisores e outros aparelhos estão sedo comercializados com este tipo de sistema integrados desdas fábricas. Contudo, possui problemas que ainda são extremamente desafiadores perante o atual avanço tecnológico e científico. O reconhecimento robusto, que consiste no reconhecimento da fala em ambientes com barulho, que utiliza processos estocásticos pode não possuir um grau de acerto em níveis aceitáveis dependendo do parâmetro de comparação, o que o torna um tanto relativo. No geral, para o público comum, o parâmetro de comparação é, indubitavelmente, o ouvido humano, pois este é o único ``sistema'' com comportamento similar conhecido pelos mesmos. Logo, um sistema de reconhecimento da fala com taxa de acerto em torno de 80\% (média para reconhecimento contínuo de fala) é algo não muito tolerável. O usuário prefere digitar, usando um editor de texto como exemplo, a corrigir todos os erros gerados pelo sistema. Isto demonstra que, apesar de sua praticidade ainda há um longo caminho a seguir.
 
 Para este problema, infelizmente, não há uma solução imediata, mas paliativa, manter o ambiente no máximo de silêncio quanto possível, falar calma e pausadamente em seu tom de voz natural. Sabemos que isto não atingirá o ideal, mas, para o público em questão, este será determinante mesmo não sendo perfeito.
 
-Um outro ponto que precisa ser ressaltado sobre esta implementação em particular, é a utilização da tecnologia 802.15 (\emph{BlueTooth SIG} \cite{bluetooth}). Esta foi desenvolvida, originalmente, afim de suprir as necessidades de transferência de dados à curta distância entre equipamentos pessoais como fones de ouvidos, impressoras, teclados, mouses e etc. Para tal, seus protocolos geram limitações quando utilizado em estruturas similares à deste projeto. Por exemplo, em uma piconet (Figura \ref{fig:piconet-scatternet}), rede formada por até 8 aparelhos comunicando-se via 802.15, há um nó mestre e 7 escravos onde cada escravo só pode transferir dados ao mestre, nunca à outro escravo, e o esquema de sequência de saltos, tempo e momento que cada escrevo possui para transferir seus dados, é definido pelo mestre o que pode gerar um certo atraso na transmissão dos comandos. E, como o número de nós em uma piconet é limitado, é necessário utilizar uma scatternet (Figura \ref{fig:piconet-scatternet}) para conectar piconets, quando objetiva-se controlar uma casa inteira com mais de 8 aprelhos à serem integrados. A sobreposição de piconets gera muita colisão, atraso ou até perda de dados na transferência, sendo assim danoso para o sistema.
+Um outro ponto que precisa ser ressaltado sobre esta implementação em particular, é a utilização da tecnologia 802.15 (\emph{BlueTooth SIG} \cite{bluetooth}). Esta foi desenvolvida, originalmente, afim de suprir as necessidades de transferência de dados à curta distância entre equipamentos pessoais como fones de ouvidos, impressoras, teclados, mouses e etc. Para tal, seus protocolos geram limitações quando utilizado em estruturas similares às deste projeto. Por exemplo, em uma piconet (Figura \ref{fig:piconet-scatternet}), rede formada por até 8 aparelhos comunicando-se via 802.15, há um nó mestre e 7 escravos onde cada escravo só pode transferir dados ao mestre, nunca a outro escravo, e o esquema de sequência de saltos, tempo e momento que cada escravo possui para transferir seus dados, é definido pelo mestre o que pode gerar um certo atraso na transmissão dos comandos. E, como o número de nós em uma piconet é limitado, é necessário utilizar uma scatternet (Figura \ref{fig:piconet-scatternet}) para conectar piconets, quando objetiva-se controlar uma casa inteira com mais de 8 aprelhos a serem integrados. A sobreposição de piconets gera muita colisão, atraso ou até perda de dados na transferência, sendo assim danoso para o sistema.
 
 \begin{figure}[htbp]
    \centering
@@ -567,7 +556,7 @@ Um outro ponto que precisa ser ressaltado sobre esta implementação em particul
     \label{fig:piconet-scatternet}
 \end{figure}
 
-Neste caso, contornar este problema é relativamente fácil. Basta mudar a tecnologia utilizada para comunicação. Esta decisão demanda a implementação de um driver específico para esta nova tecnologia escolhida de modo que o SG possa comunicar-se com ela. O protocolo 802.15.4 (\emph{ZigBee Alliance} \cite{zigbee}) é uma solução bem plausível. Sua estrutura permite que em uma rede, comparando-a à uma piconet, haja mais de 50 mil nós com três possíveis topologias (Figura \ref{fig:topologia-zigbee}): estrela, árvore e mesh. A última, em particular, é de extrema elegibilidade, pois é auto adaptável, i.e., quando um nó é removido ou um novo é inserido na rede sua estrutura se reorganiza de modo à não influenciar os demais nós já presentes na rede.
+Neste caso, contornar este problema é relativamente fácil. Basta mudar a tecnologia utilizada para comunicação. Esta decisão demanda a implementação de um \emph{driver} específico para esta nova tecnologia escolhida de modo que o SG possa comunicar-se com ela. O protocolo 802.15.4 (\emph{ZigBee Alliance} \cite{zigbee}) é uma solução bem plausível. Sua estrutura permite que em uma rede, comparando-a a uma piconet, haja mais de 50 mil nós com três possíveis topologias (Figura \ref{fig:topologia-zigbee}): estrela, árvore e mesh. A última, em particular, é de extrema elegibilidade, pois é auto adaptável, isto é, quando um nó é removido ou um novo é inserido na rede sua estrutura se reorganiza de modo a não influenciar os demais nós já presentes na rede.
 
 \begin{figure}[htbp]
    \centering
@@ -580,9 +569,9 @@ Com intuito de sugerir possíveis caminhos, a seguir serão apresentados alguns 
 
 \section{Trabalhos Futuros}
 
-Existem, de fato, diversos pontos que podem ser melhorados, como já foi mostrado. Entretanto, há algumas alterações que demandam uma análise mais profunda e detalhada. Um exemplo bem claro reside no SG utilizado neste protótipo. Este foi desenvolvido em uma linguagem de programação diferente da a presentada no trabalho de Trifa\cite{sgtriwiguiboh} gerando uma estrutura diferenciada, como apresentado na Seção \ref{sec:sg}. Um trabalho interessante seria analisar comparativamente qual impacto efetivo esta mudança trouxe para o sistema como um todo e, principalmente, para o SG, em termos de complexidade de execução, projeto e implementação. Se a estrutura gera alguma fragilidade quanto a não utilização do padrão \emph{Singleton} no projeto, posto que este visa garantir uma instanciação sem ambiguidades do driver.
+Existem, de fato, diversos pontos que podem ser melhorados, como já foi mostrado. Entretanto, há algumas alterações que demandam uma análise mais profunda e detalhada. Um exemplo bem claro reside no SG utilizado neste protótipo. Este foi desenvolvido em uma linguagem de programação diferente daquela apresentada no trabalho de Trifa\cite{sgtriwiguiboh} gerando uma estrutura diferenciada, como apresentado na Seção \ref{sec:sg}. Um trabalho interessante seria analisar comparativamente qual impacto efetivo que esta mudança trouxe para o sistema como um todo e, principalmente, para o SG, em termos de complexidade de execução, projeto e implementação. Se a estrutura gera alguma fragilidade quanto a não utilização do padrão \emph{Singleton} no projeto, posto que este visa garantir uma instanciação sem ambiguidades do driver.
 
-Ainda há muito à ser feito e as possibilidades são inúmeras, mas este é um grande passo inicial. Espera-se que com este canal aberto, enxergando as possibilidades benéficas que este tipo de trabalho gera, sejam ajudando o público alvo ou a flexibilidade adquirida para a agregação do conteúdos complexos e desconexos à primeira vista além do conhecimento em si, haja uma expansão da área ou, pelo menos, uma maior procura pelo tema.
+Ainda há muito a ser feito e as possibilidades são inúmeras, mas este é um grande passo inicial. Espera-se que com este canal aberto, enxergando as possibilidades benéficas que este tipo de trabalho gera, sejam ajudando o público alvo ou a flexibilidade adquirida para a agregação dos conteúdos complexos e desconexos à primeira vista além do conhecimento em si, haja uma expansão da área ou, pelo menos, uma maior procura pelo tema.
 
 
 %%%%%%%%%%%%%%%%%%%
@@ -709,40 +698,5 @@ Ainda há muito à ser feito e as possibilidades são inúmeras, mas este é um 
 \bibitem{handcent}
 	\emph{Handcent SMS} - \url{http://developer.android.com/reference/android/speech/RecognizerIntent.html}
 \end{thebibliography}
-
-\appendix
-
-\chapter{Configuração Galax 5}
-\label{chap:config-galax5}
-
-\begin{table}[h!]
-    \tiny
-    \begin{tabular}{|c|c|c|c|}
-	\hline
-	Tecnologia & Frequência & GSM & Quad Band (850 + 900 + 1800 + 1900 MHz)\\ \cline{3-4}
-	& & 3G & UMTS (850/1900/2100MHz) \\ \cline{2-4}
-	& Rede \; e \; Dados & GPRS & Sim \\ \cline{3-4}
-	& & EDGE & Sim \\ \cline{3-4}
-	& & 3G & Sim \\ \cline{2-4}
-	& Sistema Operacional & Android 2.1 & \\ \cline{2-3}
-	& Navegador & WAP 2.0/xHTML,HTML & \\ \hline
-	Bateria & Padrão & Capacidade & 120mAh \\ \cline{3-4}
-	& & Tempo de Conversa & 2G: \; até \; 9h \\ \cline{3-4}
-	& & Tempo de Standby & 2G: \; até \; 20 \; dias \\ \hline
-	Conectividade & Bluetooth & Sim & \\ \cline{2-3}
-	& WAP & Sim & \\ \cline{2-3}
-	& USB & Sim & \\ \cline{2-3}
-	& Navegador \; HTML & Sim & \\ \cline{2-3}
-	& Wi-Fi & Sim & \\ \cline{2-3}
-	& GPS & Sim & \\ \cline{2-3}
-	& AGPS & Sim & \\ \cline{2-3}
-	& Aplicações \; PC \; Sync & Sim & \\ \cline{2-3}
-	& USB \; Mass \; Storage & Sim & \\ \cline{2-3}
-	& Infravermelho & Sim & \\ \hline
-    \end{tabular}
-    \tiny
-    \caption{Especificações técnicas do \emph{Samsung Galaxy 5}.}
-    \label{tab:galax5}
-\end{table}
 
 \end{document}
