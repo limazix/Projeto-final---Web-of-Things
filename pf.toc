@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~a}o}{37}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Cliente REST para Android}{39}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Sistema de Reconhecimento de Fala no Android}{41}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Trabalhos Correlatos}{44}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{46}{chapter.5}
-\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{48}{section.5.1}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{51}{section.5.1}
+\contentsline {chapter}{\numberline {4}Trabalhos Correlatos}{45}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{49}{section.5.1}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{53}{figure.caption.19}
