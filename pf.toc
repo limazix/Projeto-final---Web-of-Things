@@ -8,18 +8,18 @@
 \contentsline {subsection}{\numberline {2.3.1}Extra\IeC {\c c}\IeC {\~a}o de Par\IeC {\^a}metros do Sinal}{19}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Modelagem Ac\IeC {\'u}stica}{21}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Modelo de Linguagem}{24}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Decodifica\IeC {\c c}\IeC {\~a}o}{24}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}Decodifica\IeC {\c c}\IeC {\~a}o}{25}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Arduino}{26}{section.2.4}
 \contentsline {chapter}{\numberline {3}Funcionamento do Sistema}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Rede de Atuadores e Sensores Sem Fio (RASSF)}{30}{section.3.1}
 \contentsline {section}{\numberline {3.2}Smart Gateway (SG)}{33}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Camada de Apresenta\IeC {\c c}\IeC {\~a}o}{35}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Camada de Controle}{36}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Camada de Abstra\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Camada de Abstra\IeC {\c c}\IeC {\~a}o}{37}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~a}o}{37}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Cliente REST para Android}{39}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Sistema de Reconhecimento de Fala no Android}{41}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}Trabalhos Correlatos}{45}{chapter.4}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{47}{chapter.5}
 \contentsline {section}{\numberline {5.1}Trabalhos Futuros}{49}{section.5.1}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{53}{figure.caption.19}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{53}{figure.caption.18}
